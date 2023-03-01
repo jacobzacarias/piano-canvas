@@ -439,22 +439,7 @@
             "v_type": "DoubleVector",
             "primitive_vector_vector": true,
             "swift_type": "[[Double]]"
-        },
-        "ByteVector": {
-            "objc_type": "ByteVector*",
-            "cast_to": "std::vector<char>"
-        },
-        "IntVector": {
-            "objc_type": "IntVector*",
-            "cast_to": "std::vector<int>"
-        },
-        "FloatVector": {
-            "objc_type": "FloatVector*",
-            "cast_to": "std::vector<float>"
-        },
-        "DoubleVector": {
-            "objc_type": "DoubleVector*",
-            "cast_to": "std::vector<double>"
+
         }
     }
 }
