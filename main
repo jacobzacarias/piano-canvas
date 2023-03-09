@@ -13,6 +13,28 @@
 		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 		var datetime = date+' '+time;
 		document.getElementById("datetime").innerHTML = datetime;
+
+		// Create a JSON object
+		var jsonData = {
+			"date": date,
+			"time": time,
+			"datetime": datetime
+		};
+
+		// Convert JSON object to JSON string
+		var jsonString = JSON.stringify(jsonData);
+
+		// Display JSON string in console
+		console.log(jsonString);
+
+		// Create a JSON array
+		var jsonArray = [date, time, datetime];
+
+		// Convert JSON array to JSON string
+		var jsonArrayString = JSON.stringify(jsonArray);
+
+		// Display JSON array string in console
+		console.log(jsonArrayString);
 	</script>
 </body>
 </html>
