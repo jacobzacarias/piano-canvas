@@ -6,16 +6,16 @@
         "KDTree",
         "KeyPoint",
         "DMatch"
-    // ],
-    // "missing_consts" : {
-    //     "Core" : {
-    //         "private" : [],
-    //         "public" : [
-    //             ["SVD_MODIFY_A", 1], ["SVD_NO_UV", 2], ["SVD_FULL_UV", 4],
-    //             ["FILLED", -1],
-    //             ["REDUCE_SUM", 0], ["REDUCE_AVG", 1], ["REDUCE_MAX", 2], ["REDUCE_MIN", 3]
-    //         ]
-    //     }
+    ],
+    "missing_consts" : {
+        "Core" : {
+            "private" : [],
+            "public" : [
+                ["SVD_MODIFY_A", 1], ["SVD_NO_UV", 2], ["SVD_FULL_UV", 4],
+                ["FILLED", -1],
+                ["REDUCE_SUM", 0], ["REDUCE_AVG", 1], ["REDUCE_MAX", 2], ["REDUCE_MIN", 3]
+            ]
+        }
     },
     "ManualFuncs" : {
         "Core" : {
