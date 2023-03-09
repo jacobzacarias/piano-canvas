@@ -1,0 +1,17 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        string input = "2023-03-09 14:30:00"; // example input
+
+        // parse input as a DateTime object
+        DateTime dateTime;
+        bool validDateTime = DateTime.TryParse(input, out dateTime);
+
+        if (validDateTime) {
+            Console.WriteLine("Input is a valid date and time: " + dateTime.ToString());
+        } else {
+            Console.WriteLine("Input is not a valid date and time.");
+        }
+    }
+}
