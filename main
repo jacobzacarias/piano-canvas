@@ -1,17 +1,18 @@
-using System;
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verify Time and Date</title>
+</head>
+<body>
+	<h1>Verify Time and Date</h1>
+	<p id="datetime"></p>
 
-class Program {
-    static void Main(string[] args) {
-        string input = "2023-03-09 14:30:00"; // example input
-
-        // parse input as a DateTime object
-        DateTime dateTime;
-        bool validDateTime = DateTime.TryParse(input, out dateTime);
-
-        if (validDateTime) {
-            Console.WriteLine("Input is a valid date and time: " + dateTime.ToString());
-        } else {
-            Console.WriteLine("Input is not a valid date and time.");
-        }
-    }
-}
+	<script>
+		var today = new Date();
+		var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+		var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		var datetime = date+' '+time;
+		document.getElementById("datetime").innerHTML = datetime;
+	</script>
+</body>
+</html>
